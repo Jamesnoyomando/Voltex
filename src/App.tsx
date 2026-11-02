@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { BrowserRouter, Link, Route, Routes, useLocation } from 'react-router-dom'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import { ThemeProvider } from '@/components/ui/theme-provider'
 import { CartProvider } from '@/lib/cart'
 import { Navbar } from '@/components/Navbar'
@@ -62,6 +63,7 @@ export default function App() {
             <CartSheet />
             <Footer />
           </div>
+          <SpeedInsights />
         </CartProvider>
       </BrowserRouter>
     </ThemeProvider>
